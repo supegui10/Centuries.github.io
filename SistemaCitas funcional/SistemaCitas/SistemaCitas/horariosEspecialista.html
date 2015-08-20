@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hospital Fundación Santa Fé</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <style type="text/css">
+      h1{
+        color:rgb(0, 0, 122);
+         font-weight: 600;
+        <!--background-color: rgb(221, 221, 249);-->
+      }
+      p{
+        color:rgb(0, 26, 102);
+      }
+      a{
+         color:rgb(0, 26, 102);
+         font-weight: 700;
+      }
+      img {
+        position: right;
+       top: 0px;
+      }
+      h3{
+        color:rgb(0, 0, 102);
+        font-weight: 300;
+      }
+      table{
+        border: rgb(148, 191, 255) 5px solid;
+      }
+      th, td{
+        border: 1px solid black; 
+      }
+      body{
+        background-image: url("https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpt1/v/t1.0-9/11866207_10205912495905544_4604398666864880292_n.jpg?oh=91b0768bd875fc7bd51f0a8e8b513d2d&oe=5643FEA3&__gda__=1447342506_8a34825466b63a2d35183c163fa809e4");
+        <!--background-repeat: no-repeat;-->
+        background-position: center;
+        width = '100%';
+        height = 'auto';        
+        margin-left: 100px;
+      }
+      </style>
+
+    <body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#.htmlbs-example-navbar-collapse-1">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="salidaSegura.html">Salir</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="dias.html">Volver</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+            <!-- Page Heading/Breadcrumbs -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Horas disponibles</h1>
+                    
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <h3>Eliga la horarios de atencion: </h3>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                     <!--<style>
+                         table, th, td{
+                           border: 1px solid black;
+                         }   
+                     </style>-->
+                    <table>
+                      <tr>
+                        <th> &nbsp;&nbsp;HORA&nbsp; </th>
+                        <th> &nbsp;&nbsp;LUNES&nbsp; </th>
+                        <th> &nbsp;&nbsp;MARTES&nbsp; </th>
+                        <th> &nbsp;&nbsp;MIERCOLES&nbsp; </th>
+                        <th> &nbsp;&nbsp;JUEVES&nbsp; </th>
+                        <th> &nbsp;&nbsp;VIERNES&nbsp; </th>
+                      </tr>
+                      <tr>
+                        <th> &nbsp;7:00-&nbsp;8:00&nbsp;</th>
+                        <th>
+                          <label>
+                            &nbsp;&nbsp;<input type="checkbox" name="horas" value="1" id="horas_1"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                            &nbsp;&nbsp;<input type="checkbox" name="horas" value="2" id="horas_2"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                            &nbsp;&nbsp;<input type="checkbox" name="horas" value="3" id="horas_3"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="4" id="horas_4"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="5" id="horas_5"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr>
+                      <tr>
+                        <th> &nbsp;8:00-&nbsp;9:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="6" id="horas_6"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="7" id="horas_7"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="8" id="horas_8"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="9" id="horas_9"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="10" id="horas_10"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;9:00-&nbsp;10:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="11" id="horas_11"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="12" id="horas_12"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="13" id="horas_13"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="14" id="horas_14"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="15" id="horas_15"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;10:00-&nbsp;11:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="16" id="horas_16"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="17" id="horas_17"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="18" id="horas_18"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="19" id="horas_19"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="20" id="horas_20"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;12:00-&nbsp;13:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="21" id="horas_21"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="22" id="horas_22"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="23" id="horas_23"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="24" id="horas_24"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="25" id="horas_25"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;13:00-&nbsp;14:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="26" id="horas_26"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="27" id="horas_27"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="28" id="horas_28"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="29" id="horas_29"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="30" id="horas_30"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;14:00-&nbsp;15:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="31" id="horas_31"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="32" id="horas_32"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="33" id="horas_33"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="34" id="horas_34"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="35" id="horas_35"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;15:00-&nbsp;16:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="36" id="horas_36"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="37" id="horas_37"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="38" id="horas_38"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="39" id="horas_39"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="40" id="horas_40"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;16:00-&nbsp;17:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="41" id="horas_41"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="42" id="horas_42"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="43" id="horas_43"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="44" id="horas_44"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="45" id="horas_45"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr> 
+                      <tr>
+                        <th> &nbsp;17:00-&nbsp;18:00&nbsp;</th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="46" id="horas_46"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="47" id="horas_47"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="48" id="horas_48"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="49" id="horas_49"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                        <th>
+                          <label>
+                             &nbsp;&nbsp;<input type="checkbox" name="horas" value="50" id="horas_50"> &nbsp;disponible&nbsp; </label>
+                          </th>
+                      </tr>             
+                    </table>    
+
+            <p class="submit">
+               <a type="submit" href="confirmacionEspecialista.html" class="btn btn-primary">enviar</a>
+            </p>
+
+            <!-- Footer -->
+            <footer>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p align="center">Fundación Santa Fe de Bogotá Carrera 7 No. 117 – 15. Tel: (571) 6030303 / Fax (571) 6575714 / A.A. 220246 Bogotá D.C. Colombia Suramérica / Email: info@fsfb.org.co</p>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    <!-- /.container -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+    </body>
+
+    </html>
